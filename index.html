@@ -15,13 +15,28 @@
 <body></body>
 
 <script>
-  for (let i = 0; i < 1000; i++) {
+  // for (let i = 0; i < 1000; i++) {
+  //   if(Math.random() > 0.5) {
+  //     document.body.innerText += '／'
+  //   } else {
+  //     document.body.innerText += '＼'
+  //   }
+  // }
+
+
+  
+  
+  function draw() {
+    const fps = 1000 / 5
+    setTimeout(draw, fps)
     if(Math.random() > 0.5) {
       document.body.innerText += '／'
     } else {
       document.body.innerText += '＼'
     }
-  }
-
+    }
+  
+  draw()
+ 
 
 </script>
